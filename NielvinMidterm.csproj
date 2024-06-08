@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67DB8F15-6006-4A96-AB9E-D9921A55FEFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NielvinMidterm</RootNamespace>
+    <AssemblyName>NielvinMidterm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLoan.Designer.cs">
+      <DependentUpon>AddLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmancioCoopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AmancioCoopDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AmancioCoopDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AmancioCoopDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="clientAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientAdd.Designer.cs">
+      <DependentUpon>clientAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientUpdate.Designer.cs">
+      <DependentUpon>clientUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AmancioCoopEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AmancioCoopEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AmancioCoopEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmancioCoopEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Category.cs">
+      <DependentUpon>AmancioCoopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Client.cs">
+      <DependentUpon>AmancioCoopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClientInfo.cs">
+      <DependentUpon>AmancioCoopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Loan.cs">
+      <DependentUpon>AmancioCoopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLoan.Designer.cs">
+      <DependentUpon>ViewLoan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddLoan.resx">
+      <DependentUpon>AddLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientAdd.resx">
+      <DependentUpon>clientAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientUpdate.resx">
+      <DependentUpon>clientUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ViewLoan.resx">
+      <DependentUpon>ViewLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AmancioCoopDataSet.xsc">
+      <DependentUpon>AmancioCoopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AmancioCoopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmancioCoopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmancioCoopDataSet.xss">
+      <DependentUpon>AmancioCoopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AmancioCoopDataSet1.xsc">
+      <DependentUpon>AmancioCoopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AmancioCoopDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmancioCoopDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmancioCoopDataSet1.xss">
+      <DependentUpon>AmancioCoopDataSet1.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Entities\AmancioCoopEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AmancioCoopEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AmancioCoopDataSet2.xsc">
+      <DependentUpon>AmancioCoopDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AmancioCoopDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmancioCoopDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmancioCoopDataSet2.xss">
+      <DependentUpon>AmancioCoopDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AmancioCoopDataSet3.xsc">
+      <DependentUpon>AmancioCoopDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AmancioCoopDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmancioCoopDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmancioCoopDataSet3.xss">
+      <DependentUpon>AmancioCoopDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AmancioCoopEntities.edmx.diagram">
+      <DependentUpon>AmancioCoopEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entities\AmancioCoopEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AmancioCoopEntities.Context.cs</LastGenOutput>
+      <DependentUpon>AmancioCoopEntities.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entities\AmancioCoopEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AmancioCoopEntities.edmx</DependentUpon>
+      <LastGenOutput>AmancioCoopEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
